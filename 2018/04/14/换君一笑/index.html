@@ -123,7 +123,7 @@
 
 
 
-  <title>爬虫工程师劝退文 | Hexo</title>
+  <title>换君一笑 | Hexo</title>
   
 
 
@@ -272,7 +272,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/28/爬虫工程师劝退文/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/14/换君一笑/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="大吉大利小米酱">
@@ -289,7 +289,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">爬虫工程师劝退文</h1>
+          <h1 class="post-title" itemprop="name headline">换君一笑</h1>
         
 
         <div class="post-meta">
@@ -301,7 +301,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-28T17:20:01+08:00">2018-03-28</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-14T23:15:01+08:00">2018-04-14</time>
             
 
             
@@ -322,8 +322,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/python/" itemprop="url" rel="index">
-                    <span itemprop="name">python</span>
+                  <a href="/categories/欢乐区/" itemprop="url" rel="index">
+                    <span itemprop="name">欢乐区</span>
                   </a>
                 </span>
 
@@ -359,60 +359,105 @@
       
 
       
-        <p><strong>前言：本文无源码，来聊聊爬虫工程师终将逝去的青春</strong></p>
-<p>此刻的我正坐在工位上，看着面前的某网站爬虫代码，陷入了回忆。</p>
-<h4 id="缘起"><a href="#缘起" class="headerlink" title="缘起"></a>缘起</h4><blockquote>
-<p>“你写一下XX网的爬虫，主要是爬一下个人资料，你大概需要多久？”<br>“4、5天吧”，曾经用2、3天写了知乎爬虫的我给自己留了宽裕的时间用来摸鱼。<br>“那好，我给你一个星期时间。”<br>“好的”</p>
-</blockquote>
-<p>这是零工作经验的我入职这家公司以来接到的第一个项目，从零开始写一个爬虫。</p>
-<p>既不是在爬虫系统上添加功能，也不是给祖传代码填坑。</p>
-<p>我给了自己4、5天时间。</p>
-<p>然后就走上了这条不归路……</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/5588611-1b5056ccd0b5570b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<h4 id="一个爬-fei-虫-pin-的诞生"><a href="#一个爬-fei-虫-pin-的诞生" class="headerlink" title="一个爬(fei)虫(pin)的诞生"></a>一个爬(fei)虫(pin)的诞生</h4><p>基于程序员必备的搜索技能，我迅速的在github上找到了一个相似的爬虫代码。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/5588611-8d5f0a633416105d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<p>修修改改，我只花费了2天时间就写好了爬虫，<strong>post请求呀、ajax异步加载呀、正则匹配呀、json呀</strong>什么的，甚至还优化了原作者的代码。</p>
-<p>同时，距离作者写出这个代码，已经过去很久了，网站一些信息的获取规则已经不同了。由于网站特别的策略，我学会了<strong>识别网页源码</strong>伪装通过二次传递值来查找目标信息。(首先找到传递值，再通过传递值匹配目标信息)</p>
-<p>于是，很快，我的爬虫欢乐地运行了起来。</p>
-<p>并且，满(nei)怀(liu)热(man)情(mian)地花了1个多月时间为自己的爬虫补坑(手动再见。</p>
-<h4 id="第一个障碍"><a href="#第一个障碍" class="headerlink" title="第一个障碍"></a>第一个障碍</h4><p>爬虫跑起来之后，由于单个账号请求次数过多，出现了验证码，会往注册的邮箱里发一条包含验证码的邮件，填上就可以重新登入。</p>
-<p>我始终没有通过requests越过这道坎，最终我选择了用<strong>selenium</strong>来登录网站并提交验证码，并将登录成功后的cookies信息传递给获取信息的函数块中。</p>
-<p>这时，我学会了用<strong>imaplib</strong>模块登录邮箱获取验证码。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/5588611-0e9bae386e25d0e6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<h4 id="部署服务器"><a href="#部署服务器" class="headerlink" title="部署服务器"></a>部署服务器</h4><p>解决了验证码登录的问题，程序又一次跑了起来，此时就需要部署到服务器上了。</p>
-<p>selenium的浏览器chrome不利于在服务器上运行，于是我学会了将selenium结合无头浏览器<strong>phantomjs</strong>使用。</p>
-<p>服务器是新开的，环境还需要配置，于是我又学会了<strong>配置服务器的基本操作</strong>。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/5588611-31bffe8d195069d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<h4 id="功能分离"><a href="#功能分离" class="headerlink" title="功能分离"></a>功能分离</h4><p>当单个账号单日发送的请求过多达到阀值时，网站毫不留情地封掉了账号，没有冷却时间，永久封禁。</p>
-<p>同事为我提供了批量的账号，而我 跑崩了一个又一个。</p>
-<p>于是我又改变了使用账号的策略，多个账号，轮流爬，每个爬几下就换。</p>
-<p>此时不停地用selenium登录账号已经变成肥肠影响爬虫速度的一个事情了，于是我开始分割代码。</p>
-<p>一个代码用来为账号更新cookie，一个代码直接取cookie，而可用的cookie信息，我存在了mysql中(这或许就是菜鸡吧)。。。。。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/5588611-7b48492a2b3a6c34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<p>而这样的功能分离，它有一个高级的名字，<strong>生产者-消费者模型</strong>。</p>
-<h4 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h4><p>此时爬虫，已经可以无障碍的运行了，挡在面前的问题是爬虫的速度，我开启了多线程，这时问题又来了，url的重复提取问题，单例运行时不需要考虑的问题，但当开启了多线程、多进程等并发操作时，url的去重就变得必要了。</p>
-<p>再一次功能分离，将需要提取的url，放入redis库中，爬虫程序中直接使用pop函数获取url，取出即删除，不会出现重复提取的情况，<strong>redis</strong>是一个在缓存方面非常优秀的数据库。</p>
-<p>此时的代码为了多线程的配合，将所有的与爬虫无关的，获取cookies，存取数据信息，都分离了出来，所有的通信都只存在于redis之间。</p>
-<!-- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">A(mysql) --&gt; |提供账号|B[cookies_producer.py]</span><br><span class="line">A(mysql) --&gt; |提供源链接|D[link_producer.py]</span><br><span class="line">B --&gt; |产出cookies| E(redis)</span><br><span class="line">D --&gt; |产生链接| E(redis)</span><br><span class="line">E --&gt; |提供cookie| G[info_spider.py]</span><br><span class="line">E --&gt; |提供url| G</span><br><span class="line">G --&gt; |产生目标信息|H(mysql)</span><br></pre></td></tr></table></figure>
-<p><code>mermaid
-sequenceDiagram
-  生产者mysql -&gt;&gt; 缓存redis: 将mysql中链接url放入redis中
-  生产者mysql -&gt;&gt; 缓存redis: 从mysql取出cookies放入redis
-  缓存redis -&gt;&gt; 消费者spider: 取出url进行爬取
-  缓存redis -&gt;&gt; 消费者spider: 从redis取出cookies
-  消费者spider -&gt;&gt; 缓存redis: 将爬去结果存入redis
-  缓存redis -&gt;&gt; 生产者mysql: 将爬去结果存入redis</code> –&gt;</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/5588611-4806a6a26d170bbb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/5588611-174c45f646ce555f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<h4 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h4><p>有人会想，这不就是一个项目的流程吗？</p>
-<p>为什么这篇文章的名字是爬虫工程师劝退文呢？</p>
-<p>因为我的账号依然被禁了。。。。。</p>
-<p>于是我接手了同事的注册账号的项目。。。。。</p>
-<p>砸了N多经费去买ip，买收验证码的手机号。。。。。</p>
-<p>折腾了N久终于准备开心地把注册机代码也部署到服务器上形成程序闭环。。。。。<br>。<br>。<br>。<br>。<br>。<br>发现网站改了注册策略。。。。。。。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/5588611-ae67c10af9ae5dcc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<p><strong>总结语</strong>：你看，学了这么多知识，依然过不好这爬虫工程师的一生，大家还是不要私信问我需要哪些技能才能做爬虫工程师了！赶紧转行跑路吧！(敲黑板！划重点！)</p>
--->
+        <p>┏━━━━━━━━━━━━━━━━━━━━━━┓<br>┃ 这是米酱在2012年经历的一场飞机延误事故<br>┃ 当年的米酱还是个女汉子<br>┃ 莫见怪，但为博君一笑:)<br>┗━━━━━━━━━━━━━━━━━━━━━━┛</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21b88e7022.png" alt="换君一笑-315d3eb9">大家好，我是剑锅</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21ca1c6c4c.jpg" alt="b_large_C8Ri_58a6000039a71261">我晓得你们都闲的蛋疼，所以锅来卖二了~~~~~~</p>
+<p>———————————————淫荡的分割线———————————————</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21d55be44a.jpg" alt="b_large_Howr_56a40000058f1262">为了赶14号早晨8点半的灰机，锅13号晚上就奔赴成都双流机场旅馆宅起了</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21d617453b.jpg" alt="b_large_4jL6_043000002a2c1262">今天一大早6点一刻就起床了打了个车去了机场，7点半给民那发短信说锅在等登机了</p>
+<p>蓝后到了8点十分机场依然木有要登机的迹象，说好的提前半小时登机呢魂淡？！</p>
+<p>锅这时瞅了眼锅得登机牌，这。。这。。尼玛，这不是锅当时订得航班次啊 我去！</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21d77a7b0e.jpg" alt="b_large_7kHk_66b700004ffb1262"></p>
+<p>难道我压根就不应该在这里等灰机，灰机其实早就能登陆了？！尼玛！能不能玩了？！</p>
+<p>锅连滚带爬地奔去了前台，带着哭腔问，这航班跟我订的不一样啊。。</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21da28c426.jpg" alt="b_large_3sUG_16fe000096451262"></p>
+<p>前台不紧不慢地对锅说，这趟航班取消了，今早临时取消的。</p>
+<p>取。。消。。了。。？！</p>
+<p>我在柜台前凌乱了一会，然后石化了。。。。。。。。。。。。。。。</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21daba7369.jpg" alt="b_large_jbpZ_2dd400000f6c1262"></p>
+<p>蓝后被风吹走了！！！！！</p>
+<p>为毛不提前通知一下，锅得小命都吓没了！！！</p>
+<p>于是我的航班改成了10点40滴，登机口人越来越多，好多人跟锅一样航班取消推迟到10点40滴。</p>
+<p>时间来到了上午10点10分，大家开始聚集在登机口排队等上灰机。。。。</p>
+<p>十分钟过去了。。。。。。。</p>
+<p>二十分钟过去了。。。。。。。。。</p>
+<p>半个小时过去了！！！！！！！！！</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21db4dd4cc.jpg" alt="b_large_ICyj_57910000121a1262"></p>
+<p>四十分钟过去了。。。。。。。。。终于能上灰机了，这时时间已经来到了可爱的萌萌的11点~~~</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21e346334e.jpg" alt="b_large_MGtS_56a4000006051262"></p>
+<p>飞机晚点嘛~发生这种事情~大家都不想的~~做人呢~最重要的是要开心~所以吃碗面神马得等一会也是可行滴~</p>
+<p>坐在灰机上做好起飞的准备，摆正离开成都滴心情~</p>
+<p>十分钟过去了。。。。。。。</p>
+<p>二十分钟过去了。。。。。。。。。</p>
+<p>半个小时过去了！！！！！！！！！</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21db4dd4cc.jpg" alt="b_large_ICyj_57910000121a1262"></p>
+<p>有一位勇敢的大叔站起来了，乘务员小姐，你们这是什么情况啊，等这么久还不起飞。</p>
+<p>又一位牢骚的大哥站起来了，我坐了这么久的飞机，第一次遇到这种情况，取消航班不说，还晚点，现在什么情况？！</p>
+<p>然后群众们都勇敢站起来了！！！！</p>
+<p>这时候乘务员姐姐播广播了~起飞排队中~正在向中心控制台提交起飞申请~~~</p>
+<p>好吧~那就等吧~~~~</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21e346334e.jpg" alt="b_large_MGtS_56a4000006051262"></p>
+<p>终于~在时间来到12点的时候~~~~灰机上跑道了~~~~</p>
+<p>慢慢得滑到起飞点，起步~~慢慢滑~~加速~~~~~嗡~~~~灰机起飞了~~~~~</p>
+<p>？？？？？</p>
+<p>纳尼？Σ(っ °Д °;)っ说好的“嗡~~~~”呢？！</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21e7f90979.jpg" alt="b_large_mtdh_046900002ab21262"></p>
+<p>为神马加速之后又减速了。。。。。。。。</p>
+<p>蓝后飞机从中间岔路回到广场上去了。。。。。。。。。。。</p>
+<p>蓝后又饶了一圈。。。。。。。。。。。。。</p>
+<p>蓝后停了下来。。。。。。。。。。。。。</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21db4dd4cc.jpg" alt="b_large_ICyj_57910000121a1262"></p>
+<p>尼玛！闹哪样啊？！！！</p>
+<p>“各位旅客，飞机起飞过程中出现了一点小小的机械故障，我们会尽快排查完毕，希望您能原谅。”</p>
+<p>是的。。。一点小小的机械故障。。。。。</p>
+<p>mechanical problem！！！！！</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21eb0b3dff.jpg" alt="b_large_zH8d_3bb8000090cd1262"></p>
+<p>坐在我旁边的大伯开始不淡定了。。。。</p>
+<p>他从行李架上掏出包包。。。。</p>
+<p>从包包里面掏出一个塑料袋。。。。。</p>
+<p>塑料袋里面装得是。。。。</p>
+<p>蔬菜！！！！！</p>
+<p>那个蔬菜。。。。可能是这样</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21ed53ba46.jpg" alt="b_large_I4UN_2dd4000010201262"></p>
+<p>也可能是这样</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21edf7a16f.jpg" alt="b_large_AicX_6b840000016e1262"></p>
+<p>也貌似像这样</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21eef18b47.jpg" alt="b_large_FHZh_22730000444d1262"></p>
+<p>我木有看清楚。。。。。</p>
+<p>蓝后他开始打电话。。。。</p>
+<p>“菜要是再在飞机上呆一会就蔫了，我们走吧”</p>
+<p>蓝后。。。。在机舱一片混乱中。。。。。。</p>
+<p>大伯坚定地消失了。。。。。。。。</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21f0200bd6.jpg" alt="b_large_XEp1_046900002b4a1262"></p>
+<p>人群开始暴动了，有些人要求退票。。。</p>
+<p>有些人要粗去吃午饭。。。。</p>
+<p>有人要改签。。。。。。。</p>
+<p>作为一个14号一定要赶到广州的苦逼娃。。。。</p>
+<p>我弱弱地滚到乘务员姐姐那问，今天飞机能飞了不。。</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21f15d5c2f.jpg" alt="b_large_EBiB_47b900008ef71262"></p>
+<p>乘务员姐姐说 一定能的 放心</p>
+<p>蓝后我就肥到座位上 弱弱地等。。。。。</p>
+<p>弱弱地打开手机，看到别人给锅发得短信让锅飞机着陆了报个平安。。。。。。。。</p>
+<p>锅挨个打电话表达了锅依然在成都的复杂的心情。。。。。。。</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21f3109cdc.jpg" alt="b_large_Pl5d_66b7000050e91262"></p>
+<p>锅已经凌乱了。。。。。。</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21f4f904a8.jpg" alt="b_large_hI7v_66b7000050fb1262"></p>
+<p>尼玛能不能玩了！！！！这时间都来到下午1点60了啊！！！！</p>
+<p>十分钟过去了。。。。。。。</p>
+<p>二十分钟过去了。。。。。。。。。</p>
+<p>半个小时过去了！！！！！！！！！</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21db4dd4cc.jpg" alt="b_large_ICyj_57910000121a1262"></p>
+<p>在时间来到2点半的时候。。。。</p>
+<p>乘务员姐姐终于告诉我们，灰机修好啦~~~~~~~~~</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21f907856c.jpg" alt="b_large_I2Zd_046900002b9a1262"></p>
+<p>又开始做好准备起飞的心情。。。。</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21fa073f6b.jpg" alt="b_large_1y2W_0def0000b4a21262">十分钟过去了。。。。。。。</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21faa5ddfe.jpg" alt="b_large_ibiF_0def0000b4a91262">二十分钟过去了。。。。。。。。。</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21fb4ef7ee.jpg" alt="b_large_fNqr_6d3e000086a91262">草。。。。。。。。。。</p>
+<p>终于尼玛飞机动了！！！！！！！！！</p>
+<p>4点35~到广州了，民那，感谢你们的支持与鼓励。</p>
+<p><img src="https://i.loli.net/2018/04/14/5ad21fc59f011.jpg" alt="b_large_ecL4_023e00002d851262">祝我平安~~~~~</p>
+
       
     </div>
     
@@ -439,9 +484,7 @@ sequenceDiagram
       
         <div class="post-tags">
           
-            <a href="/tags/爬虫/" rel="tag"># 爬虫</a>
-          
-            <a href="/tags/经验/" rel="tag"># 经验</a>
+            <a href="/tags/娱乐/" rel="tag"># 娱乐</a>
           
         </div>
       
@@ -454,8 +497,8 @@ sequenceDiagram
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/01/03/历史文章汇总/" rel="next" title="历史文章汇总">
-                <i class="fa fa-chevron-left"></i> 历史文章汇总
+              <a href="/2018/03/28/爬虫工程师劝退文/" rel="next" title="爬虫工程师劝退文">
+                <i class="fa fa-chevron-left"></i> 爬虫工程师劝退文
               </a>
             
           </div>
@@ -463,10 +506,6 @@ sequenceDiagram
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/14/换君一笑/" rel="prev" title="换君一笑">
-                换君一笑 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -523,17 +562,8 @@ sequenceDiagram
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -641,22 +671,6 @@ sequenceDiagram
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#缘起"><span class="nav-number">1.</span> <span class="nav-text">缘起</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#一个爬-fei-虫-pin-的诞生"><span class="nav-number">2.</span> <span class="nav-text">一个爬(fei)虫(pin)的诞生</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第一个障碍"><span class="nav-number">3.</span> <span class="nav-text">第一个障碍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#部署服务器"><span class="nav-number">4.</span> <span class="nav-text">部署服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#功能分离"><span class="nav-number">5.</span> <span class="nav-text">功能分离</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多线程"><span class="nav-number">6.</span> <span class="nav-text">多线程</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
