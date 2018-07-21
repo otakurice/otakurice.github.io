@@ -365,8 +365,8 @@
       
         <h3 id="添加网易云音乐单曲"><a href="#添加网易云音乐单曲" class="headerlink" title="添加网易云音乐单曲"></a>添加网易云音乐单曲</h3><p>获取网易云音乐歌曲页面的外链方法<br><img src="https://user-gold-cdn.xitu.io/2018/7/21/164ba88025ca3ca3?w=666&amp;h=293&amp;f=jpeg&amp;s=46956" alt=""></p>
 <p><img src="https://user-gold-cdn.xitu.io/2018/7/21/164ba89fa5d3c72e?w=751&amp;h=630&amp;f=png&amp;s=94132" alt=""><br>根据个人勾选选项，选择后将html代码复制，套上如下div即可。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"music163player"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">280</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">"//music.163.com/outchain/player?type=2&amp;id=28885472&amp;auto=1&amp;height=66"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>修改主题下layout\_macro\sidebar.swig文件，将上述代码贴入到想放的位置。</p>
-<h3 id="添加歌单"><a href="#添加歌单" class="headerlink" title="添加歌单"></a>添加歌单</h3><p>如果想要添加歌单，网易云的歌单页面也有生成外链的按钮。<br><img src="https://user-gold-cdn.xitu.io/2018/7/21/164ba8597778a771?w=688&amp;h=384&amp;f=jpeg&amp;s=55773" alt=""></p>
+<p>修改<strong>主题文件夹</strong>下layout\_macro\sidebar.swig文件，将上述代码贴入到想放的位置。</p>
+<h3 id="添加歌单"><a href="#添加歌单" class="headerlink" title="添加歌单"></a>添加歌单</h3><p>如果想要添加歌单，网易云的歌单页面也有生成外链的按钮。<br><img src="https://user-gold-cdn.xitu.io/2018/7/21/164ba8597778a771?w=688&amp;h=384&amp;f=jpeg&amp;s=55773" alt=""><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"music163player"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">330</span> <span class="attr">height</span>=<span class="string">450</span> <span class="attr">src</span>=<span class="string">"//music.163.com/outchain/player?type=0&amp;id=2324520604&amp;auto=1&amp;height=430"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <!-- 使用一个开源项目**Aplayer**
 将下面代码贴到layout\\_macro\sidebar.swig文件中
 
@@ -612,8 +612,8 @@
           
           
 <div id="music163player">
-	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=2324520604&auto=1&height=430">
-	</iframe>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=28885472&auto=1&height=66">
+    </iframe>
 </div>
           
           
@@ -683,7 +683,7 @@
   <div class="theme-info">
   <i class="fa fa-user-md"></i>
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共6.7k字</span>
+  <span class="post-count">博客全站共6.8k字</span>
   </div>
   <div class="powered-by">
   <span id="busuanzi_container_site_uv">
