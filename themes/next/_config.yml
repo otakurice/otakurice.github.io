@@ -141,6 +141,11 @@ social:
 
 social_icons:
   enable: true
+  Github: github-alt
+  简书: joomla
+  知乎: leaf
+  掘金: connectdevelop
+  
   icons_only: false
   transition: false
 
