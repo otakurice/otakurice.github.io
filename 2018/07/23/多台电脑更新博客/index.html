@@ -365,9 +365,33 @@
       
         <p>在自己的电脑上使用了github的博客hexo，用的很顺利。</p>
 <p>后来业务需要又多了一台电脑办公，想要更新博客就很困难了<em>(:з」∠)</em></p>
-<p>在网上找了一些解决方案。</p>
+<p>在网上找了一些解决方案：<a href="https://www.jianshu.com/p/0b1fccce74e0" target="_blank" rel="noopener">https://www.jianshu.com/p/0b1fccce74e0</a></p>
 <hr>
-<h3 id="每次更新需要的操作"><a href="#每次更新需要的操作" class="headerlink" title="每次更新需要的操作"></a>每次更新需要的操作</h3><h5 id="同步分支更新"><a href="#同步分支更新" class="headerlink" title="同步分支更新"></a>同步分支更新</h5>
+<h3 id="根据解决方案自己进行的操作及原理"><a href="#根据解决方案自己进行的操作及原理" class="headerlink" title="根据解决方案自己进行的操作及原理"></a>根据解决方案自己进行的操作及原理</h3><p>这个同步其实比较好实现，但是因为什么分支，不同电脑，不同文件夹，又是push又是pull，导致我花了好久才看到@^@，所以总结一下。</p>
+<p>A电脑是我们平时写博客用的电脑。</p>
+<p>B电脑是我们想要在上面写博客的新电脑。</p>
+<hr>
+<h3 id="每次更新需要的操作"><a href="#每次更新需要的操作" class="headerlink" title="每次更新需要的操作"></a>每次更新需要的操作</h3><h5 id="同步github分支更新"><a href="#同步github分支更新" class="headerlink" title="同步github分支更新"></a>同步github分支更新</h5><p>首先通过fork将github上副分支的更新pull下来，保证与github是同一版</p>
+<h5 id="向github提交新博客"><a href="#向github提交新博客" class="headerlink" title="向github提交新博客"></a>向github提交新博客</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 自己电脑</span><br><span class="line">cd /Users/xiaomi/Documents/Python/gitproject/otakurice.github.io</span><br><span class="line"># 业务电脑</span><br><span class="line">cd /Users/xiaomi/Documents/xiaomi/github_blog</span><br></pre></td></tr></table></figure>
+<p>后续操作与之前同步博客一样</p>
+<ul>
+<li><p>启动本地服务器<br>可通过：<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 在本地预览博客效果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>清除缓存(可选操作)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>生成博客文章静态页面<br>md文章编辑成功后</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /Users/xiaomi/Documents/Python/blog</span><br><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将文章部署至github</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h5 id="向分支push更新"><a href="#向分支push更新" class="headerlink" title="向分支push更新"></a>向分支push更新</h5><p>通过hexo deploy提交的博客，实际上是将生成html文件提交到了master分支。</p>
+<p>我们要把博客里的配置文件与源文件都提交到副分支中，以保证副分支是最新的。</p>
+<p>使用fork将更新后的博客push到副分支。</p>
+
       
     </div>
     
@@ -610,7 +634,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#每次更新需要的操作"><span class="nav-number">1.</span> <span class="nav-text">每次更新需要的操作</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#同步分支更新"><span class="nav-number">1.0.1.</span> <span class="nav-text">同步分支更新</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#根据解决方案自己进行的操作及原理"><span class="nav-number">1.</span> <span class="nav-text">根据解决方案自己进行的操作及原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#每次更新需要的操作"><span class="nav-number">2.</span> <span class="nav-text">每次更新需要的操作</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#同步github分支更新"><span class="nav-number">2.0.1.</span> <span class="nav-text">同步github分支更新</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#向github提交新博客"><span class="nav-number">2.0.2.</span> <span class="nav-text">向github提交新博客</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#向分支push更新"><span class="nav-number">2.0.3.</span> <span class="nav-text">向分支push更新</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -646,7 +670,7 @@
   <div class="theme-info">
   <i class="fa fa-user-md"></i>
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共6.8k字</span>
+  <span class="post-count">博客全站共7.1k字</span>
   </div>
   <div class="powered-by">
   <span id="busuanzi_container_site_uv">
