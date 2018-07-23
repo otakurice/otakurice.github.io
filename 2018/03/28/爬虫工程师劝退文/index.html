@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.0" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+  
+
+
+  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="var QZONE = window.QZONE || {}; 	function imagezoom(imgobj, box_w, box_h) { 		var src_w = imgobj.width; 		var src_h = imgobj.height; 		var r1 = src_w / src_h, r2 = box_w / box_h;">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/404.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="var QZONE = window.QZONE || {}; 	function imagezoom(imgobj, box_w, box_h) { 		var src_w = imgobj.width; 		var src_h = imgobj.height; 		var r1 = src_w / src_h, r2 = box_w / box_h;">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-01-03T01:43:13.902Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="var QZONE = window.QZONE || {}; 	function imagezoom(imgobj, box_w, box_h) { 		var src_w = imgobj.width; 		var src_h = imgobj.height; 		var r1 = src_w / src_h, r2 = box_w / box_h;">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.0.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/404.html"/>
+
+
+
+
+
+  <title>爬虫工程师劝退文 | Hexo</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <a href="https://github.com/otakurice"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/28/爬虫工程师劝退文/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="大吉大利小米酱">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">爬虫工程师劝退文</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-28T17:20:01+08:00">2018-03-28</time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/经验总结/" itemprop="url" rel="index">
+                    <span itemprop="name">经验总结</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><strong>前言：本文无源码，来聊聊爬虫工程师终将逝去的青春</strong></p>
+<p>此刻的我正坐在工位上，看着面前的某网站爬虫代码，陷入了回忆。</p>
+<h4 id="缘起"><a href="#缘起" class="headerlink" title="缘起"></a>缘起</h4><blockquote>
+<p>“你写一下XX网的爬虫，主要是爬一下个人资料，你大概需要多久？”<br>“4、5天吧”，曾经用2、3天写了知乎爬虫的我给自己留了宽裕的时间用来摸鱼。<br>“那好，我给你一个星期时间。”<br>“好的”</p>
+</blockquote>
+<p>这是零工作经验的我入职这家公司以来接到的第一个项目，从零开始写一个爬虫。</p>
+<p>既不是在爬虫系统上添加功能，也不是给祖传代码填坑。</p>
+<p>我给了自己4、5天时间。</p>
+<p>然后就走上了这条不归路……</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/5588611-1b5056ccd0b5570b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="一个爬-fei-虫-pin-的诞生"><a href="#一个爬-fei-虫-pin-的诞生" class="headerlink" title="一个爬(fei)虫(pin)的诞生"></a>一个爬(fei)虫(pin)的诞生</h4><p>基于程序员必备的搜索技能，我迅速的在github上找到了一个相似的爬虫代码。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/5588611-8d5f0a633416105d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>修修改改，我只花费了2天时间就写好了爬虫，<strong>post请求呀、ajax异步加载呀、正则匹配呀、json呀</strong>什么的，甚至还优化了原作者的代码。</p>
+<p>同时，距离作者写出这个代码，已经过去很久了，网站一些信息的获取规则已经不同了。由于网站特别的策略，我学会了<strong>识别网页源码</strong>伪装通过二次传递值来查找目标信息。(首先找到传递值，再通过传递值匹配目标信息)</p>
+<p>于是，很快，我的爬虫欢乐地运行了起来。</p>
+<p>并且，满(nei)怀(liu)热(man)情(mian)地花了1个多月时间为自己的爬虫补坑(手动再见。</p>
+<h4 id="第一个障碍"><a href="#第一个障碍" class="headerlink" title="第一个障碍"></a>第一个障碍</h4><p>爬虫跑起来之后，由于单个账号请求次数过多，出现了验证码，会往注册的邮箱里发一条包含验证码的邮件，填上就可以重新登入。</p>
+<p>我始终没有通过requests越过这道坎，最终我选择了用<strong>selenium</strong>来登录网站并提交验证码，并将登录成功后的cookies信息传递给获取信息的函数块中。</p>
+<p>这时，我学会了用<strong>imaplib</strong>模块登录邮箱获取验证码。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/5588611-0e9bae386e25d0e6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="部署服务器"><a href="#部署服务器" class="headerlink" title="部署服务器"></a>部署服务器</h4><p>解决了验证码登录的问题，程序又一次跑了起来，此时就需要部署到服务器上了。</p>
+<p>selenium的浏览器chrome不利于在服务器上运行，于是我学会了将selenium结合无头浏览器<strong>phantomjs</strong>使用。</p>
+<p>服务器是新开的，环境还需要配置，于是我又学会了<strong>配置服务器的基本操作</strong>。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/5588611-31bffe8d195069d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="功能分离"><a href="#功能分离" class="headerlink" title="功能分离"></a>功能分离</h4><p>当单个账号单日发送的请求过多达到阀值时，网站毫不留情地封掉了账号，没有冷却时间，永久封禁。</p>
+<p>同事为我提供了批量的账号，而我 跑崩了一个又一个。</p>
+<p>于是我又改变了使用账号的策略，多个账号，轮流爬，每个爬几下就换。</p>
+<p>此时不停地用selenium登录账号已经变成肥肠影响爬虫速度的一个事情了，于是我开始分割代码。</p>
+<p>一个代码用来为账号更新cookie，一个代码直接取cookie，而可用的cookie信息，我存在了mysql中(这或许就是菜鸡吧)。。。。。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/5588611-7b48492a2b3a6c34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>而这样的功能分离，它有一个高级的名字，<strong>生产者-消费者模型</strong>。</p>
+<h4 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h4><p>此时爬虫，已经可以无障碍的运行了，挡在面前的问题是爬虫的速度，我开启了多线程，这时问题又来了，url的重复提取问题，单例运行时不需要考虑的问题，但当开启了多线程、多进程等并发操作时，url的去重就变得必要了。</p>
+<p>再一次功能分离，将需要提取的url，放入redis库中，爬虫程序中直接使用pop函数获取url，取出即删除，不会出现重复提取的情况，<strong>redis</strong>是一个在缓存方面非常优秀的数据库。</p>
+<p>此时的代码为了多线程的配合，将所有的与爬虫无关的，获取cookies，存取数据信息，都分离了出来，所有的通信都只存在于redis之间。</p>
+<!-- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">A(mysql) --&gt; |提供账号|B[cookies_producer.py]</span><br><span class="line">A(mysql) --&gt; |提供源链接|D[link_producer.py]</span><br><span class="line">B --&gt; |产出cookies| E(redis)</span><br><span class="line">D --&gt; |产生链接| E(redis)</span><br><span class="line">E --&gt; |提供cookie| G[info_spider.py]</span><br><span class="line">E --&gt; |提供url| G</span><br><span class="line">G --&gt; |产生目标信息|H(mysql)</span><br></pre></td></tr></table></figure>
+<p><code>mermaid
+sequenceDiagram
+  生产者mysql -&gt;&gt; 缓存redis: 将mysql中链接url放入redis中
+  生产者mysql -&gt;&gt; 缓存redis: 从mysql取出cookies放入redis
+  缓存redis -&gt;&gt; 消费者spider: 取出url进行爬取
+  缓存redis -&gt;&gt; 消费者spider: 从redis取出cookies
+  消费者spider -&gt;&gt; 缓存redis: 将爬去结果存入redis
+  缓存redis -&gt;&gt; 生产者mysql: 将爬去结果存入redis</code> –&gt;</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/5588611-4806a6a26d170bbb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/5588611-174c45f646ce555f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h4 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h4><p>有人会想，这不就是一个项目的流程吗？</p>
+<p>为什么这篇文章的名字是爬虫工程师劝退文呢？</p>
+<p>因为我的账号依然被禁了。。。。。</p>
+<p>于是我接手了同事的注册账号的项目。。。。。</p>
+<p>砸了N多经费去买ip，买收验证码的手机号。。。。。</p>
+<p>折腾了N久终于准备开心地把注册机代码也部署到服务器上形成程序闭环。。。。。<br>。<br>。<br>。<br>。<br>。<br>发现网站改了注册策略。。。。。。。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/5588611-ae67c10af9ae5dcc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p><strong>总结语</strong>：你看，学了这么多知识，依然过不好这爬虫工程师的一生，大家还是不要私信问我需要哪些技能才能做爬虫工程师了！赶紧转行跑路吧！(敲黑板！划重点！)</p>
+-->
+      
+    </div>
+    
+    
+    
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      
+    </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/爬虫/" rel="tag"># 爬虫</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/03/历史文章汇总/" rel="next" title="历史文章汇总">
+                <i class="fa fa-chevron-left"></i> 历史文章汇总
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/14/博君一笑/" rel="prev" title="博君一笑">
+                博君一笑 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjg2Mi85NDIz"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+<script src="https://cdn.bootcss.com/aplayer/1.6.0/APlayer.min.js"></script>
+<script src="https://api.i-meto.com/music/player.js"></script>
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.png"
+                alt="大吉大利小米酱" />
+            
+              <p class="site-author-name" itemprop="name">大吉大利小米酱</p>
+              <p class="site-description motion-element" itemprop="description">理想是不上班还很有钱，当小富婆</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/otakurice" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github-alt"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://www.jianshu.com/u/8e45f2f3b6c1" target="_blank" title="简书">
+                      
+                        <i class="fa fa-fw fa-joomla"></i>简书</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/otakurice" target="_blank" title="知乎">
+                      
+                        <i class="fa fa-fw fa-leaf"></i>知乎</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://juejin.im/user/58dc96f98d6d81006138192a" target="_blank" title="掘金">
+                      
+                        <i class="fa fa-fw fa-connectdevelop"></i>掘金</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+<div id="music163player">
+  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=400 src="//music.163.com/outchain/player?type=0&id=2324520604&auto=1&height=430">
+  </iframe>
+</div>
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://flyoob.com" title="头号迷弟的博客" target="_blank">头号迷弟的博客</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#缘起"><span class="nav-number">1.</span> <span class="nav-text">缘起</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#一个爬-fei-虫-pin-的诞生"><span class="nav-number">2.</span> <span class="nav-text">一个爬(fei)虫(pin)的诞生</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第一个障碍"><span class="nav-number">3.</span> <span class="nav-text">第一个障碍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#部署服务器"><span class="nav-number">4.</span> <span class="nav-text">部署服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#功能分离"><span class="nav-number">5.</span> <span class="nav-text">功能分离</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多线程"><span class="nav-number">6.</span> <span class="nav-text">多线程</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">大吉大利小米酱</span>
+
+  
+
+  
+</div>
+
+
+  <div class="theme-info">
+  <i class="fa fa-user-md"></i>
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共6.9k字</span>
+  </div>
+  <div class="powered-by">
+  <span id="busuanzi_container_site_uv">
+    共<span id="busuanzi_value_site_uv"></span>位迷弟曾来过这里
+  </span>
+  </div>
+  <br>
+<!--  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Pisces</a> v6.0.0</div>-->
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.0.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+  
+<div id="hexo-helper-live2d">
+  <canvas id="live2dcanvas" width="150" height="300"></canvas>
+</div>
+<style>
+  #live2dcanvas{
+    position: fixed;
+    width: 150px;
+    height: 300px;
+    opacity:0.7;
+    right: 0px;
+    z-index: 999;
+    pointer-events: none;
+    bottom: -20px;
+  }
+</style>
+<script type="text/javascript" src="/live2d/device.min.js"></script>
+<script type="text/javascript">
+const loadScript = function loadScript(c,b){var a=document.createElement("script");a.type="text/javascript";"undefined"!=typeof b&&(a.readyState?a.onreadystatechange=function(){if("loaded"==a.readyState||"complete"==a.readyState)a.onreadystatechange=null,b()}:a.onload=function(){b()});a.src=c;document.body.appendChild(a)};
+(function(){
+  if((typeof(device) != 'undefined') && (device.mobile())){
+    var trElement = document.getElementById('hexo-helper-live2d');
+    trElement.parentNode.removeChild(trElement);
+    return;
+  }else
+    if (typeof(device) === 'undefined') console.error('Cannot find current-device script.');
+  loadScript("/live2d/script.js", function(){loadlive2d("live2dcanvas", "/live2d/assets/wanko.model.json", 0.5);});
+})();
+</script>
+
+</body>
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
