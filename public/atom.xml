@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-07-23T02:05:42.993Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>大吉大利小米酱</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>多台电脑更新hexo博客</title>
+    <link href="http://yoursite.com/2018/07/23/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2018/07/23/多台电脑更新博客/</id>
+    <published>2018-07-23T01:18:01.000Z</published>
+    <updated>2018-07-23T02:05:42.993Z</updated>
+    
+    <content type="html"><![CDATA[<p>在自己的电脑上使用了github的博客hexo，用的很顺利。</p><p>后来业务需要又多了一台电脑办公，想要更新博客就很困难了<em>(:з」∠)</em></p><p>在网上找了一些解决方案。</p><hr><h3 id="每次更新需要的操作"><a href="#每次更新需要的操作" class="headerlink" title="每次更新需要的操作"></a>每次更新需要的操作</h3><h5 id="同步分支更新"><a href="#同步分支更新" class="headerlink" title="同步分支更新"></a>同步分支更新</h5>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;在自己的电脑上使用了github的博客hexo，用的很顺利。&lt;/p&gt;
+&lt;p&gt;后来业务需要又多了一台电脑办公，想要更新博客就很困难了&lt;em&gt;(:з」∠)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;在网上找了一些解决方案。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;每次更新需要的操作&quot;&gt;&lt;a href=
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="命令合辑" scheme="http://yoursite.com/tags/%E5%91%BD%E4%BB%A4%E5%90%88%E8%BE%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo 添加网易云音乐歌单</title>
+    <link href="http://yoursite.com/2018/07/20/hexo%20%E6%B7%BB%E5%8A%A0%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E6%AD%8C%E5%8D%95/"/>
+    <id>http://yoursite.com/2018/07/20/hexo 添加网易云音乐歌单/</id>
+    <published>2018-07-20T14:21:01.000Z</published>
+    <updated>2018-07-21T02:07:46.791Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="添加网易云音乐单曲"><a href="#添加网易云音乐单曲" class="headerlink" title="添加网易云音乐单曲"></a>添加网易云音乐单曲</h3><p>获取网易云音乐歌曲页面的外链方法<br><img src="https://user-gold-cdn.xitu.io/2018/7/21/164ba88025ca3ca3?w=666&amp;h=293&amp;f=jpeg&amp;s=46956" alt=""></p><p><img src="https://user-gold-cdn.xitu.io/2018/7/21/164ba89fa5d3c72e?w=751&amp;h=630&amp;f=png&amp;s=94132" alt=""><br>根据个人勾选选项，选择后将html代码复制，套上如下div即可。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"music163player"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">280</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">"//music.163.com/outchain/player?type=2&amp;id=28885472&amp;auto=1&amp;height=66"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p><p>修改<strong>主题文件夹</strong>下layout\_macro\sidebar.swig文件(这是侧边栏路径)，将上述代码贴入到想放的位置。</p><h3 id="添加歌单"><a href="#添加歌单" class="headerlink" title="添加歌单"></a>添加歌单</h3><p>如果想要添加歌单，网易云的歌单页面也有生成外链的按钮。<br><img src="https://user-gold-cdn.xitu.io/2018/7/21/164ba8597778a771?w=688&amp;h=384&amp;f=jpeg&amp;s=55773" alt=""><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"music163player"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">330</span> <span class="attr">height</span>=<span class="string">450</span> <span class="attr">src</span>=<span class="string">"//music.163.com/outchain/player?type=0&amp;id=2324520604&amp;auto=1&amp;height=430"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p><!-- 使用一个开源项目**Aplayer**将下面代码贴到layout\\_macro\sidebar.swig文件中<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;https://cdn.bootcss.com/aplayer/1.6.0/APlayer.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;https://api.i-meto.com/music/player.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure><p>在需要的位置添加播放器：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;aplayer&quot; data-id=&quot;2324520604&quot; data-server=&quot;netease&quot; data-type=&quot;playlist&quot; data-mode=&quot;random&quot; data-autoplay=&quot;false&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure><p>设置参数如下：（粗体为必填项）</p><ul><li><strong>data-id</strong>: 歌曲/专辑/歌单 ID</li><li><strong>data-server</strong>: 音乐平台，支持如下参数<ul><li>netease （网易云音乐）</li><li>tencent （qq音乐）</li><li>xiami （虾米音乐）</li><li>kugou （酷狗音乐）</li><li>baidu （百度音乐）</li></ul></li><li><strong>data-type</strong>: 请求类型，支持如下参数<ul><li>song （单曲）</li><li>album （专辑）</li><li>playlist （歌单）</li><li>search （搜索）</li></ul></li><li>data-mode: 播放模式<ul><li>random （随机）</li><li>single （单曲）</li><li>circulation （列表循环）</li><li>order （列表）</li></ul></li><li>data-autoplay: 自动播放<ul><li>true</li><li>false –&gt;</li></ul></li></ul>-->]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;添加网易云音乐单曲&quot;&gt;&lt;a href=&quot;#添加网易云音乐单曲&quot; class=&quot;headerlink&quot; title=&quot;添加网易云音乐单曲&quot;&gt;&lt;/a&gt;添加网易云音乐单曲&lt;/h3&gt;&lt;p&gt;获取网易云音乐歌曲页面的外链方法&lt;br&gt;&lt;img src=&quot;https://user
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="命令合辑" scheme="http://yoursite.com/tags/%E5%91%BD%E4%BB%A4%E5%90%88%E8%BE%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>程序员的自我修养：搜商篇(咆哮风)</title>
+    <link href="http://yoursite.com/2018/07/17/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%87%AA%E6%88%91%E4%BF%AE%E5%85%BB%EF%BC%9A%E6%90%9C%E5%95%86%E7%AF%87(%E5%92%86%E5%93%AE%E9%A3%8E)/"/>
+    <id>http://yoursite.com/2018/07/17/程序员的自我修养：搜商篇(咆哮风)/</id>
+    <published>2018-07-17T15:38:01.000Z</published>
+    <updated>2018-07-21T01:57:23.711Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>前言:本文是关于殿堂级菜鸟的系列吐槽</strong></p><p>米酱作为一枚程序员界的萌新、菜鸟，因为喜欢分享一些学习笔记和工作心得，我得到了一些更菜的菜鸟们的关注，于是，恩，加速了我更年期的到来。</p><p>初学者在某种意义上是不自知的、核弹级的、毁灭性的存在，一个初入行的程序员可能是一个bug制造机、一个背锅工程师、一个祭天贡品，而一个初学者，当它瞪大了它那双单纯无邪的眼睛满怀期待地望向你时，心地善良温柔和蔼的你即使保持微笑耐心解答，也很难让内心奔腾在大草原上的神兽刹车。</p><p>考虑到“谁还不曾是个萌得不能再萌的萌新呢”这件事，我必须要吐槽一下萌新的搜商。</p><p><img src="https://user-gold-cdn.xitu.io/2018/7/19/164b02418fbcf165?w=310&amp;h=256&amp;f=png&amp;s=163283" alt=""></p><p>表情包镇楼</p><p>表情包的百度，可以泛指百度，谷歌，知乎，csdn，segmentfault，stackoverflow，github，and so on……(如果你不知道这些是什么，百度</p><p>一个非常好的消息，只要你可以看到我这篇文章，说明你已与百度官网达成合作关系，有什么需要，百度搜索引擎将为你提供360°无死角的知识反馈。(*^▽^*)</p><h3 id="1-吐槽"><a href="#1-吐槽" class="headerlink" title="1.吐槽"></a>1.吐槽</h3><p>最让我目瞪狗呆的搜索类问题：</p><p><img src="https://user-gold-cdn.xitu.io/2018/7/19/164b024190fe1f60?w=200&amp;h=199&amp;f=png&amp;s=36818" alt=""></p><h4 id="1-1-如何学习XXX"><a href="#1-1-如何学习XXX" class="headerlink" title="1.1 如何学习XXX"></a>1.1 如何学习XXX</h4><p>这个问题可以在多个平台搜索获取，譬如在知乎可以搜到可谓是完善又全面回答，如何搜索？知乎最上方，有个白框，输完问题，有个放大镜，看到没？看到没？！</p><p><img src="https://user-gold-cdn.xitu.io/2018/7/19/164b024191dc34cd?w=566&amp;h=61&amp;f=png&amp;s=10079" alt=""></p><p>强烈建议先点放大镜！先点放大镜！先点放大镜！重要的事说三遍！</p><p>点提问没人理你的概率高达90%！先看有没有相似提问高赞答案，再发问！</p><p>如何搜？以学习数据分析为例，关键词“数据分析”</p><p><img src="https://user-gold-cdn.xitu.io/2018/7/19/164b0241923ddf50?w=1029&amp;h=764&amp;f=png&amp;s=269927" alt=""></p><p>蓝色框专栏、话题、相关讨论、相关用户，看看他们关于数据分析有什么见解，绿色框，数据分析工具书。</p><p>换一个关键词“数据分析学习”</p><p><img src="https://user-gold-cdn.xitu.io/2018/7/19/164b0241925ccf60?w=1028&amp;h=771&amp;f=png&amp;s=249318" alt=""></p><p>“数据分析入门”</p><p><img src="https://user-gold-cdn.xitu.io/2018/7/19/164b0241926e3cca?w=1062&amp;h=776&amp;f=png&amp;s=264657" alt=""></p><p>搜到了大把的干货教程，一个关键词找不到，你换个关键词找啊！“数据分析书籍”、“数据分析视频”、“数据分析实战”，知乎搜不到？去百度搜啊！去谷歌搜啊！去segmentfault搜啊！</p><h4 id="1-2-这个报错怎么回事"><a href="#1-2-这个报错怎么回事" class="headerlink" title="1.2 这个报错怎么回事"></a>1.2 这个报错怎么回事</h4><p>经常会遇到人截了个报错图，有时候可能还是张手机拍摄，带45°角柔光双摄，照亮你的美……啊呸……带角度的照片</p><p><img src="https://user-gold-cdn.xitu.io/2018/7/19/164b0241b36dad09?w=960&amp;h=720&amp;f=png&amp;s=1020256" alt=""></p><p>(ノへ~、) ……</p><p>有一句话不知当讲不当讲</p><p><img src="https://user-gold-cdn.xitu.io/2018/7/19/164b0241b5f52123?w=559&amp;h=337&amp;f=png&amp;s=220984" alt=""></p><p>亲爱的盆友！！o(╥﹏╥)o你家的阳光真的很好我已经知道了！你2000W像素的手机拍照效果很好我也知道了！你的电脑已经崩到不能装QQ了吗？！那还用来跑程序真是辛苦你了！！为了看个报错眼睛都瞎了！！</p><p>好了，在付出瞎眼的代价下，我们看最后一行：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ImportError: No module named &apos;xxx&apos;</span><br></pre></td></tr></table></figure><p>亲爱的盆友×2！！我们！挖掘一下我们初中、高中学习的英文单词词库！！至少这句话在学沫眼里应该是这样的</p><p>\@#￥错：不#￥%名字‘xxx’</p><p>所以这一行就是传说中的报错信息啊！！还有2个单词，咱们查一下百度</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import: n.输入</span><br><span class="line">module: n.模块</span><br></pre></td></tr></table></figure><p>现在这句至少该变成→输入错：不模块名字‘xxx’</p><p>这里“不”也可以理解成没有，所以这个报错就是没有这个名字的模块啊！！</p><p>我怎么就变成教英语的啦！！QAQ所以你们知道学英语的重要性了嘛！！</p><p>实在不想学英语，我们百度！我们百度还不行吗？！</p><p>怎么百度？来我手把手教你(看我巴掌</p><p>直接将报错信息复制粘贴至搜索框</p><p><img src="https://user-gold-cdn.xitu.io/2018/7/19/164b0241b79240ce?w=615&amp;h=778&amp;f=png&amp;s=231725" alt=""></p><p>亲爱的盆友×3！！你知道你拍照、截图问问题有多让人心碎了吗？！！</p><p>看到你的报错！我还要一字一句，敲到百度去啊！！是的！有些歪门邪道的报错我也是要去百度的啊！</p><p>一个优秀的提问者，截图之后应该将可能需要复制的内容，贴成文字方便对方复制。(好的知道了我承认我就是懒得打字 </p><h4 id="1-3-xx库的安装、环境、系统变量配置问题"><a href="#1-3-xx库的安装、环境、系统变量配置问题" class="headerlink" title="1.3 xx库的安装、环境、系统变量配置问题"></a>1.3 xx库的安装、环境、系统变量配置问题</h4><p>我理解有一些角度刁钻的环境配置问题即使百度也百度不到，此时考验的是一个人对于操作系统、库本身的理解深度。</p><p>但是！初学者遇到的环境配置问题、库安装问题，98%都可以百度到(留2%省得被打脸！</p><p>能不能不要再问windows系统下如何同时安装python2和Python3这类问题了！</p><p>这种问题百度教程大把大把的好嘛！！！</p><p>你搜不到？！搜的什么关键词？换个方式试试！！</p><p><img src="https://user-gold-cdn.xitu.io/2018/7/19/164b0241bee91386?w=584&amp;h=521&amp;f=png&amp;s=181928" alt=""></p><p>不要Windows？要mac？带上关键词！！！</p><p><img src="https://user-gold-cdn.xitu.io/2018/7/19/164b0241bfcf0a61?w=570&amp;h=640&amp;f=png&amp;s=209105" alt=""></p><hr><h3 id="2-正经说人话"><a href="#2-正经说人话" class="headerlink" title="2 正经说人话"></a>2 正经说人话</h3><p>每一个想做开发的人，都应该具备搜索能力，也要具备搜索思维，再引申一下就是应变能力。</p><h4 id="2-1-关于搜索平台"><a href="#2-1-关于搜索平台" class="headerlink" title="2.1 关于搜索平台"></a>2.1 关于搜索平台</h4><p>每个平台都有其专注的领域，譬如百度(泛指国内搜索引擎)，可能没有google结果精准，但是中文解决方案较多，并且包罗万象，可以间接获取知乎、segmentfault、Stack Overflow上的解决方案。</p><p>而google相对结果更为精准，但对于全英文搜索关键词，搜索结果倾向于英文，此时需要开发者具备一定的英文阅读能力。</p><p>想搜索资源整合一类，知乎有很多优秀的答主做了技术栈总结，也可以去各大培训网站的课程规划区，免费为你总结了某方向所需学习知识→_→</p><p>项目博客类，博客园、csdn、掘金、知乎……英文不错的话可以关注国外的技术博客。</p><p>源码类，github、百度网盘……</p><p>视频教学类，网易公开课、云课堂、慕课网、coursera……</p><h4 id="2-2-关于搜索关键词"><a href="#2-2-关于搜索关键词" class="headerlink" title="2.2 关于搜索关键词"></a>2.2 关于搜索关键词</h4><p>关于构造关键词，就需要了解seo，因为很多时候搜索引擎对于关键词的存储不是整句话的，所以当想知道“如何使用python实现归并排序算法”，此时可以提取关键词“python 归并排序”或者“python merge-sort”，甚至可以只搜索“merge-sort”，看看别的语言如何实现的。</p><h4 id="2-3-关于搜索发散"><a href="#2-3-关于搜索发散" class="headerlink" title="2.3 关于搜索发散"></a>2.3 关于搜索发散</h4><p>这里讲的是搜索关键词以外的事情，包括转换思维、挖掘新事物等各种。</p><p>譬如在多次搜索过程中，发现搜到了同一个网站下的解决方案，可能这是一个在此方面比较权威的网站，可以了解网站本身，或者搜索到某个博客的观点非常新颖，可以了解博主的其他文章中的思路。(以上俩种仅在时间充裕时使用……迭代式搜索就是time killer)</p><p>又譬如在搜索某关键词而不得时，换一种方向搜索，想要知道“python如何使用三角函数”，还可以换种思路“python科学计算模块”获取模块numpy，“python数学计算模块”获取math，“python数学计算库”获取scipy等之后，再进一步搜索“numpy 三角函数”，或者直接去看模块文档。</p><hr><p>关于搜商的总结大概就这些，为了维护米酱乖巧可爱端庄优雅的姿态(太菜答不出问题的窘态)，望大家避免以上类坑，有事百度啊！！！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;前言:本文是关于殿堂级菜鸟的系列吐槽&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;米酱作为一枚程序员界的萌新、菜鸟，因为喜欢分享一些学习笔记和工作心得，我得到了一些更菜的菜鸟们的关注，于是，恩，加速了我更年期的到来。&lt;/p&gt;
+&lt;p&gt;初学者在某种意义上是不自知的、核弹级的
+      
+    
+    </summary>
+    
+      <category term="经验总结" scheme="http://yoursite.com/categories/%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/"/>
+    
+    
+      <category term="吐槽" scheme="http://yoursite.com/tags/%E5%90%90%E6%A7%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>opencv在python中的哈夫直线变换(Hough Line Transform)</title>
+    <link href="http://yoursite.com/2018/07/12/opencv%E5%9C%A8Python%E4%B8%AD%E7%9A%84%E5%93%88%E5%A4%AB%E7%9B%B4%E7%BA%BF%E5%8F%98%E6%8D%A2/"/>
+    <id>http://yoursite.com/2018/07/12/opencv在Python中的哈夫直线变换/</id>
+    <published>2018-07-12T14:54:01.000Z</published>
+    <updated>2018-07-21T01:24:12.648Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>在做项目中，需要识别图片中的表格，了解到opencv中的哈夫变换，<a href="http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_houghlines/py_houghlines.html" target="_blank" rel="noopener">相关文档</a>只有英文版，未找到中文版，自行翻译了一遍(能力有限渣翻译)，其中拓展阅读内容引自：<a href="https://blog.csdn.net/mokeding/article/details/19615873" target="_blank" rel="noopener">Python OpenCV – 霍夫线变换（十二）</a>，可帮助理解，仅供参考。</p><h3 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h3><p>在本章中，我们可以：</p><ul><li><p>了解哈夫变换的概念</p></li><li><p>如何使用哈夫变换识别图片中的直线</p></li><li><p>了解以下函数：<strong>cv2.HoughLines()</strong>, <strong>cv2.HoughLinesP()</strong></p></li></ul><h3 id="理论"><a href="#理论" class="headerlink" title="理论"></a>理论</h3><p>哈夫变换(Hough Transform)是一种流行的图形识别技术，如果数学模型中的图形可以被肉眼识别，那么即使图形损坏或者有一点扭曲，哈夫变换也可以识别图形，接下来介绍它的工作原理。</p><p>直线可以通过类似 y = mx + c 或 极坐标 ρ = x cosθ + y sinθ(其中ρ表示原点到直线的垂直距离，θ是垂直线与水平轴之间的逆时针方向夹角，方向主要取决于如何放置坐标系)来表示。如下图：</p><p><img src="https://upload-images.jianshu.io/upload_images/5588611-6e9d63d2385d7296.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><p>如果线经过原点下方，那就有小于180°的正[RHO][^脚注]和夹角。如果线经过原点上方，相较于使用大于180°的夹角，opencv会选择使用小于180°的夹角，并采用负的RHO。垂直线是0°，水平线是90°。</p><p>来看看哈夫变换如何处理线条。任何线条都可以由(ρ,θ)2个参数形容，首先创建一个二维数组或者累加器(存储2个参数的值)，初始化为0。用行表示ρ，用列表示θ，数组的大小取决于精确度需求，假设精确度为1°，则需要180列，ρ最大距离可能是图片对角线的长度，所以设置精确度为1像素，那么行数就是图片对角线长。</p><hr><h3 id="拓展阅读"><a href="#拓展阅读" class="headerlink" title="拓展阅读"></a>拓展阅读</h3><p>1、<img src="https://upload-images.jianshu.io/upload_images/5588611-b048fbc34bce979a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><p>用 极坐标系 来表示直线，直线的表达式可为:</p><p>$$ y = (- \frac{cosθ}{sinθ})x + (\frac{r}{sinθ}) $$</p><p>化简得： $ r = x cosθ + y sinθ $</p><p>2、一般来说对于点$(x_0,y_0)$, 我们可以将通过这个点的一族直线统一定义为:</p><p>$$ r_\theta = x_0 · cos\theta + y_0 · sin\theta $$</p><p>这就意味着每一对$(r_\theta, \theta)$ 代表一条通过点$(x_0,y_0)$的直线.</p><hr><p>假设有一个100*100的图片，有一条水平线在中间，获取这条线的第一个点，已知它的(x, y)值，然后将θ = 0,1,2,……,180放入线条方程中，获取ρ值。对于每个(ρ, θ)单元格，累加器中与之相关的(ρ, θ)单元格每次增加的值为1，所以在累加器中，(50, 90) = 1和一些其他单项相关联。</p><p>然后取线条上的第二个点，进行以上相同的动作，增加与之相关联的(ρ, θ)单元格，此时(50, 90) = 2，现在的操作都会增加(ρ, θ)的值。继续为线条上的每个点进行相同的操作，在每个点，(50, 90)单元格可以增值或者计数，其他单元格可能不会被计数。通过这种方式，最后(50, 90)单元格会得到最大的计数。如果在计数器中搜索最大计数，就可以得到(50, 90 )的值，表示在距离原点50，90°角的地方有一条线，在以下动图中显示。</p><p><img src="https://upload-images.jianshu.io/upload_images/5588611-e15cf762963c683b.gif?imageMogr2/auto-orient/strip" alt=""></p><p>这就是哈夫变换作用于线条的原理，可以使用numpy来执行它。下图展示了累加模型，图中高亮的位置代表着图片中可能是线条的参数。</p><p><img src="https://upload-images.jianshu.io/upload_images/5588611-6ecd812e67ec9ffa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><hr><h3 id="拓展阅读-1"><a href="#拓展阅读-1" class="headerlink" title="拓展阅读"></a>拓展阅读</h3><p>1、如果对于一个给定点$(x_0,y_0)$ 我们在极坐标对极径极角平面绘出所有通过它的直线, 将得到一条正弦曲线. 例如, 对于给定点 $x_0 = 8$ 和 $y_0 = 6$我们可以绘出下图 (在平面 $\theta - r$):</p><p><img src="https://upload-images.jianshu.io/upload_images/5588611-79866e52cbabfb86.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><p>只绘出满足下列条件的点$r &gt; 0$ 和 $0 &lt; \theta &lt; 2\pi$.</p><p>2、我们可以对图像中所有的点进行上述操作. 如果两个不同点进行上述操作后得到的曲线在平面$\theta - r$相交, 这就意味着它们通过同一条直线. 例如, 接上面的例子我们继续对点: $x_1 = 9, y_1 = 4$ 和点$x_2 = 12, y_2 = 3$ 绘图, 得到下图:</p><p><img src="https://upload-images.jianshu.io/upload_images/5588611-d38f2d6f0d10dff0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><p>这三条曲线在$\theta - r$平面相交于点$(0.925, 9.6)$, 坐标表示的是参数对$(\theta, r)$ 或者是说点$(x_0,y_0)$, 点$(x_1,y_1)$ 和点$(x_2,y_2)$ 组成的平面内的的直线.</p><p>3、一条直线能够通过在平面$\theta - r$ 寻找交于一点的曲线数量来<strong>检测</strong>. 越多曲线交于一点也就意味着这个交点表示的直线由更多的点组成. 一般来说我们可以通过设置直线上点的 阈值 来定义多少条曲线交于一点我们才认为<strong>检测</strong> 到了一条直线.</p><p>4、这就是霍夫线变换要做的. 它追踪图像中每个点对应曲线间的交点. 如果交于一点的曲线的数量超过了<strong>阈值</strong>, 那么可以认为这个交点所代表的参数对$(\theta, r_\theta)$ 在原图像中为一条直线.</p><hr><h3 id="OpenCV中的哈夫变换"><a href="#OpenCV中的哈夫变换" class="headerlink" title="OpenCV中的哈夫变换"></a>OpenCV中的哈夫变换</h3><p>上面讲述的是Opencv中的函数，cv2.HoughLines()。它返回(ρ, θ)值的序列，ρ单位像素，θ单位弧度。第一个参数，输入的图片是一个二进制图片，在使用hough变换之前，应用阈值或使用canny边缘检测。第二和第三个参数分别是ρ和θ的精度，第4个参数是阈值，指可以被认为是一个线条的最小计数值。由于计数值的多少取决于线上的点数，所以这代表了可以被识别为线的最小长度。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span>  cv2</span><br><span class="line"><span class="keyword">import</span>  numpy  <span class="keyword">as</span>  np</span><br><span class="line"></span><br><span class="line">img  =  cv2.imread(<span class="string">'dave.jpg'</span>)</span><br><span class="line">gray  =  cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)</span><br><span class="line">edges  =  cv2.Canny(gray,<span class="number">50</span>,<span class="number">150</span>,apertureSize  =  <span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">lines  =  cv2.HoughLines(edges,<span class="number">1</span>,np.pi/<span class="number">180</span>,<span class="number">200</span>)</span><br><span class="line"><span class="keyword">for</span>  rho,theta  <span class="keyword">in</span>  lines[<span class="number">0</span>]:</span><br><span class="line">    a  =  np.cos(theta)</span><br><span class="line">    b  =  np.sin(theta)</span><br><span class="line">    x0  =  a*rho</span><br><span class="line">    y0  =  b*rho</span><br><span class="line">    x1  =  int(x0  +  <span class="number">1000</span>*(-b))</span><br><span class="line">    y1  =  int(y0  +  <span class="number">1000</span>*(a))</span><br><span class="line">    x2  =  int(x0  -  <span class="number">1000</span>*(-b))</span><br><span class="line">    y2  =  int(y0  -  <span class="number">1000</span>*(a))</span><br><span class="line"></span><br><span class="line">    cv2.line(img,(x1,y1),(x2,y2),(<span class="number">0</span>,<span class="number">0</span>,<span class="number">255</span>),<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">cv2.imwrite(<span class="string">'houghlines3.jpg'</span>,img)</span><br></pre></td></tr></table></figure><p>认为第9行代码存在一定错误，应为：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">for i in range(0,len(lines)):</span><br><span class="line">    rho,theta = lines[i][0][0],lines[i][0][1]</span><br></pre></td></tr></table></figure><p>结果如下：</p><p><img src="https://upload-images.jianshu.io/upload_images/5588611-a59dc20f46855769.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><h3 id="概率哈夫变换"><a href="#概率哈夫变换" class="headerlink" title="概率哈夫变换"></a>概率哈夫变换</h3><p>在哈夫变换中，可以通过2个变量来检测一条线上的点，但花费大量计算。概率哈夫变换是一个优化的哈夫变换，它不会计算所有的点，而是随机的选取一组足以识别直线的点，所以我们需要减少阈值。看下图中关于哈夫变换和概率哈夫变换在哈夫空间的比较：</p><p><img src="https://upload-images.jianshu.io/upload_images/5588611-c16b6f62a0c081f5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><p>OpenCV 技术是基于Matas, J. and Galambos, C. and Kittler, J.V.使用概率哈夫变换进行的线条鲁棒检测。它通过cv2.HoughLinesP()来实现,函数有2个新的参数。</p><ul><li><p><strong>minLineLength</strong> - 线段的最小长度. Line segments shorter than this are rejected.</p></li><li><p><strong>maxLineGap</strong> - 使程序识别线段为一条线的线段之间最大的空隙</p></li></ul><p>最好是这样，函数直接返回了线条的两个终点，在前面的实例中，必须找到所有的点，而只获取了线的参数。在这个实例中，所有的事都变得简单直接。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span>  cv2</span><br><span class="line"><span class="keyword">import</span>  numpy  <span class="keyword">as</span>  np</span><br><span class="line"></span><br><span class="line">img  =  cv2.imread(<span class="string">'dave.jpg'</span>)</span><br><span class="line">gray  =  cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)</span><br><span class="line">edges  =  cv2.Canny(gray,<span class="number">50</span>,<span class="number">150</span>,apertureSize  =  <span class="number">3</span>)</span><br><span class="line">minLineLength  =  <span class="number">100</span></span><br><span class="line">maxLineGap  =  <span class="number">10</span></span><br><span class="line">lines  =  cv2.HoughLinesP(edges,<span class="number">1</span>,np.pi/<span class="number">180</span>,<span class="number">100</span>,minLineLength,maxLineGap)</span><br><span class="line"><span class="keyword">for</span>  x1,y1,x2,y2  <span class="keyword">in</span>  lines[<span class="number">0</span>]:</span><br><span class="line">    cv2.line(img,(x1,y1),(x2,y2),(<span class="number">0</span>,<span class="number">255</span>,<span class="number">0</span>),<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">cv2.imwrite(<span class="string">'houghlines5.jpg'</span>,img)</span><br></pre></td></tr></table></figure><p>结果如下：</p><p><img src="https://upload-images.jianshu.io/upload_images/5588611-cfe11f9ad29ff624.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><p>[^脚注]: 曲线饱满度，RHO 值越小,曲线就越平坦;RHO值越大,曲线就越饱满,RHO&lt;0.5,曲线为椭圆,RHO=0.5时,曲线为抛物线;RHO&gt;0.5时,曲线为双曲线!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h3&gt;&lt;p&gt;在做项目中，需要识别图片中的表格，了解到opencv中的哈夫变换，&lt;a href=&quot;http://opencv-python-tutroal
+      
+    
+    </summary>
+    
+      <category term="翻译" scheme="http://yoursite.com/categories/%E7%BF%BB%E8%AF%91/"/>
+    
+    
+      <category term="图像识别" scheme="http://yoursite.com/tags/%E5%9B%BE%E5%83%8F%E8%AF%86%E5%88%AB/"/>
+    
+      <category term="opencv" scheme="http://yoursite.com/tags/opencv/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博君一笑</title>
+    <link href="http://yoursite.com/2018/04/14/%E5%8D%9A%E5%90%9B%E4%B8%80%E7%AC%91/"/>
+    <id>http://yoursite.com/2018/04/14/博君一笑/</id>
+    <published>2018-04-14T15:15:01.000Z</published>
+    <updated>2018-04-14T16:18:47.119Z</updated>
+    
+    <content type="html"><![CDATA[<p>┏━━━━━━━━━━━━━━━━━━━━━━┓<br>┃ 这是米酱在2012年经历的一场飞机延误事故<br>┃ 当年的米酱还是个女汉子<br>┃ 与技术无关，莫见怪，但为博君一笑:)<br>┗━━━━━━━━━━━━━━━━━━━━━━┛</p><p><img src="https://i.loli.net/2018/04/14/5ad21b88e7022.png" alt="换君一笑-315d3eb9">大家好，我是剑锅</p><p><img src="https://i.loli.net/2018/04/14/5ad21ca1c6c4c.jpg" alt="b_large_C8Ri_58a6000039a71261">我晓得你们都闲的蛋疼，所以锅来卖二了~~~~~~</p><p>———————————————淫荡的分割线———————————————</p><p><img src="https://i.loli.net/2018/04/14/5ad21d55be44a.jpg" alt="b_large_Howr_56a40000058f1262">为了赶14号早晨8点半的灰机，锅13号晚上就奔赴成都双流机场旅馆宅起了</p><p><img src="https://i.loli.net/2018/04/14/5ad21d617453b.jpg" alt="b_large_4jL6_043000002a2c1262">今天一大早6点一刻就起床了打了个车去了机场，7点半给民那发短信说锅在等登机了</p><p>蓝后到了8点十分机场依然木有要登机的迹象，说好的提前半小时登机呢魂淡？！</p><p>锅这时瞅了眼锅得登机牌，这。。这。。尼玛，这不是锅当时订得航班次啊 我去！</p><p><img src="https://i.loli.net/2018/04/14/5ad21d77a7b0e.jpg" alt="b_large_7kHk_66b700004ffb1262"></p><p>难道我压根就不应该在这里等灰机，灰机其实早就能登陆了？！尼玛！能不能玩了？！</p><p>锅连滚带爬地奔去了前台，带着哭腔问，这航班跟我订的不一样啊。。</p><p><img src="https://i.loli.net/2018/04/14/5ad21da28c426.jpg" alt="b_large_3sUG_16fe000096451262"></p><p>前台不紧不慢地对锅说，这趟航班取消了，今早临时取消的。</p><p>取。。消。。了。。？！</p><p>我在柜台前凌乱了一会，然后石化了。。。。。。。。。。。。。。。</p><p><img src="https://i.loli.net/2018/04/14/5ad21daba7369.jpg" alt="b_large_jbpZ_2dd400000f6c1262"></p><p>蓝后被风吹走了！！！！！</p><p>为毛不提前通知一下，锅得小命都吓没了！！！</p><p>于是我的航班改成了10点40滴，登机口人越来越多，好多人跟锅一样航班取消推迟到10点40滴。</p><p>时间来到了上午10点10分，大家开始聚集在登机口排队等上灰机。。。。</p><p>十分钟过去了。。。。。。。</p><p>二十分钟过去了。。。。。。。。。</p><p>半个小时过去了！！！！！！！！！</p><p><img src="https://i.loli.net/2018/04/14/5ad21db4dd4cc.jpg" alt="b_large_ICyj_57910000121a1262"></p><p>四十分钟过去了。。。。。。。。。终于能上灰机了，这时时间已经来到了可爱的萌萌的11点~~~</p><p><img src="https://i.loli.net/2018/04/14/5ad21e346334e.jpg" alt="b_large_MGtS_56a4000006051262"></p><p>飞机晚点嘛~发生这种事情~大家都不想的~~做人呢~最重要的是要开心~所以吃碗面神马得等一会也是可行滴~</p><p>坐在灰机上做好起飞的准备，摆正离开成都滴心情~</p><p>十分钟过去了。。。。。。。</p><p>二十分钟过去了。。。。。。。。。</p><p>半个小时过去了！！！！！！！！！</p><p><img src="https://i.loli.net/2018/04/14/5ad21db4dd4cc.jpg" alt="b_large_ICyj_57910000121a1262"></p><p>有一位勇敢的大叔站起来了，乘务员小姐，你们这是什么情况啊，等这么久还不起飞。</p><p>又一位牢骚的大哥站起来了，我坐了这么久的飞机，第一次遇到这种情况，取消航班不说，还晚点，现在什么情况？！</p><p>然后群众们都勇敢站起来了！！！！</p><p>这时候乘务员姐姐播广播了~起飞排队中~正在向中心控制台提交起飞申请~~~</p><p>好吧~那就等吧~~~~</p><p><img src="https://i.loli.net/2018/04/14/5ad21e346334e.jpg" alt="b_large_MGtS_56a4000006051262"></p><p>终于~在时间来到12点的时候~~~~灰机上跑道了~~~~</p><p>慢慢得滑到起飞点，起步~~慢慢滑~~加速~~~~~嗡~~~~灰机起飞了~~~~~</p><p>？？？？？</p><p>纳尼？Σ(っ °Д °;)っ说好的“嗡~~~~”呢？！</p><p><img src="https://i.loli.net/2018/04/14/5ad21e7f90979.jpg" alt="b_large_mtdh_046900002ab21262"></p><p>为神马加速之后又减速了。。。。。。。。</p><p>蓝后飞机从中间岔路回到广场上去了。。。。。。。。。。。</p><p>蓝后又饶了一圈。。。。。。。。。。。。。</p><p>蓝后停了下来。。。。。。。。。。。。。</p><p><img src="https://i.loli.net/2018/04/14/5ad21db4dd4cc.jpg" alt="b_large_ICyj_57910000121a1262"></p><p>尼玛！闹哪样啊？！！！</p><p>“各位旅客，飞机起飞过程中出现了一点小小的机械故障，我们会尽快排查完毕，希望您能原谅。”</p><p>是的。。。一点小小的机械故障。。。。。</p><p>mechanical problem！！！！！</p><p><img src="https://i.loli.net/2018/04/14/5ad21eb0b3dff.jpg" alt="b_large_zH8d_3bb8000090cd1262"></p><p>坐在我旁边的大伯开始不淡定了。。。。</p><p>他从行李架上掏出包包。。。。</p><p>从包包里面掏出一个塑料袋。。。。。</p><p>塑料袋里面装得是。。。。</p><p>蔬菜！！！！！</p><p>那个蔬菜。。。。可能是这样</p><p><img src="https://i.loli.net/2018/04/14/5ad21ed53ba46.jpg" alt="b_large_I4UN_2dd4000010201262"></p><p>也可能是这样</p><p><img src="https://i.loli.net/2018/04/14/5ad21edf7a16f.jpg" alt="b_large_AicX_6b840000016e1262"></p><p>也貌似像这样</p><p><img src="https://i.loli.net/2018/04/14/5ad21eef18b47.jpg" alt="b_large_FHZh_22730000444d1262"></p><p>我木有看清楚。。。。。</p><p>蓝后他开始打电话。。。。</p><p>“菜要是再在飞机上呆一会就蔫了，我们走吧”</p><p>蓝后。。。。在机舱一片混乱中。。。。。。</p><p>大伯坚定地消失了。。。。。。。。</p><p><img src="https://i.loli.net/2018/04/14/5ad21f0200bd6.jpg" alt="b_large_XEp1_046900002b4a1262"></p><p>人群开始暴动了，有些人要求退票。。。</p><p>有些人要粗去吃午饭。。。。</p><p>有人要改签。。。。。。。</p><p>作为一个14号一定要赶到广州的苦逼娃。。。。</p><p>我弱弱地滚到乘务员姐姐那问，今天飞机能飞了不。。</p><p><img src="https://i.loli.net/2018/04/14/5ad21f15d5c2f.jpg" alt="b_large_EBiB_47b900008ef71262"></p><p>乘务员姐姐说 一定能的 放心</p><p>蓝后我就肥到座位上 弱弱地等。。。。。</p><p>弱弱地打开手机，看到别人给锅发得短信让锅飞机着陆了报个平安。。。。。。。。</p><p>锅挨个打电话表达了锅依然在成都的复杂的心情。。。。。。。</p><p><img src="https://i.loli.net/2018/04/14/5ad21f3109cdc.jpg" alt="b_large_Pl5d_66b7000050e91262"></p><p>锅已经凌乱了。。。。。。</p><p><img src="https://i.loli.net/2018/04/14/5ad21f4f904a8.jpg" alt="b_large_hI7v_66b7000050fb1262"></p><p>尼玛能不能玩了！！！！这时间都来到下午1点60了啊！！！！</p><p>十分钟过去了。。。。。。。</p><p>二十分钟过去了。。。。。。。。。</p><p>半个小时过去了！！！！！！！！！</p><p><img src="https://i.loli.net/2018/04/14/5ad21db4dd4cc.jpg" alt="b_large_ICyj_57910000121a1262"></p><p>在时间来到2点半的时候。。。。</p><p>乘务员姐姐终于告诉我们，灰机修好啦~~~~~~~~~</p><p><img src="https://i.loli.net/2018/04/14/5ad21f907856c.jpg" alt="b_large_I2Zd_046900002b9a1262"></p><p>又开始做好准备起飞的心情。。。。</p><p><img src="https://i.loli.net/2018/04/14/5ad21fa073f6b.jpg" alt="b_large_1y2W_0def0000b4a21262">十分钟过去了。。。。。。。</p><p><img src="https://i.loli.net/2018/04/14/5ad21faa5ddfe.jpg" alt="b_large_ibiF_0def0000b4a91262">二十分钟过去了。。。。。。。。。</p><p><img src="https://i.loli.net/2018/04/14/5ad21fb4ef7ee.jpg" alt="b_large_fNqr_6d3e000086a91262">草。。。。。。。。。。</p><p>终于尼玛飞机动了！！！！！！！！！</p><p>4点35~到广州了，民那，感谢你们的支持与鼓励。</p><p><img src="https://i.loli.net/2018/04/14/5ad21fc59f011.jpg" alt="b_large_ecL4_023e00002d851262">祝我平安~~~~~</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;┏━━━━━━━━━━━━━━━━━━━━━━┓&lt;br&gt;┃ 这是米酱在2012年经历的一场飞机延误事故&lt;br&gt;┃ 当年的米酱还是个女汉子&lt;br&gt;┃ 与技术无关，莫见怪，但为博君一笑:)&lt;br&gt;┗━━━━━━━━━━━━━━━━━━━━━━┛&lt;/p&gt;
+&lt;p&gt;&lt;img src=
+      
+    
+    </summary>
+    
+      <category term="欢乐区" scheme="http://yoursite.com/categories/%E6%AC%A2%E4%B9%90%E5%8C%BA/"/>
+    
+    
+      <category term="娱乐" scheme="http://yoursite.com/tags/%E5%A8%B1%E4%B9%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>爬虫工程师劝退文</title>
+    <link href="http://yoursite.com/2018/03/28/%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%8A%9D%E9%80%80%E6%96%87/"/>
+    <id>http://yoursite.com/2018/03/28/爬虫工程师劝退文/</id>
+    <published>2018-03-28T09:20:01.000Z</published>
+    <updated>2018-07-21T01:34:33.274Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>前言：本文无源码，来聊聊爬虫工程师终将逝去的青春</strong></p><p>此刻的我正坐在工位上，看着面前的某网站爬虫代码，陷入了回忆。</p><h4 id="缘起"><a href="#缘起" class="headerlink" title="缘起"></a>缘起</h4><blockquote><p>“你写一下XX网的爬虫，主要是爬一下个人资料，你大概需要多久？”<br>“4、5天吧”，曾经用2、3天写了知乎爬虫的我给自己留了宽裕的时间用来摸鱼。<br>“那好，我给你一个星期时间。”<br>“好的”</p></blockquote><p>这是零工作经验的我入职这家公司以来接到的第一个项目，从零开始写一个爬虫。</p><p>既不是在爬虫系统上添加功能，也不是给祖传代码填坑。</p><p>我给了自己4、5天时间。</p><p>然后就走上了这条不归路……</p><p><img src="https://upload-images.jianshu.io/upload_images/5588611-1b5056ccd0b5570b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><h4 id="一个爬-fei-虫-pin-的诞生"><a href="#一个爬-fei-虫-pin-的诞生" class="headerlink" title="一个爬(fei)虫(pin)的诞生"></a>一个爬(fei)虫(pin)的诞生</h4><p>基于程序员必备的搜索技能，我迅速的在github上找到了一个相似的爬虫代码。</p><p><img src="https://upload-images.jianshu.io/upload_images/5588611-8d5f0a633416105d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><p>修修改改，我只花费了2天时间就写好了爬虫，<strong>post请求呀、ajax异步加载呀、正则匹配呀、json呀</strong>什么的，甚至还优化了原作者的代码。</p><p>同时，距离作者写出这个代码，已经过去很久了，网站一些信息的获取规则已经不同了。由于网站特别的策略，我学会了<strong>识别网页源码</strong>伪装通过二次传递值来查找目标信息。(首先找到传递值，再通过传递值匹配目标信息)</p><p>于是，很快，我的爬虫欢乐地运行了起来。</p><p>并且，满(nei)怀(liu)热(man)情(mian)地花了1个多月时间为自己的爬虫补坑(手动再见。</p><h4 id="第一个障碍"><a href="#第一个障碍" class="headerlink" title="第一个障碍"></a>第一个障碍</h4><p>爬虫跑起来之后，由于单个账号请求次数过多，出现了验证码，会往注册的邮箱里发一条包含验证码的邮件，填上就可以重新登入。</p><p>我始终没有通过requests越过这道坎，最终我选择了用<strong>selenium</strong>来登录网站并提交验证码，并将登录成功后的cookies信息传递给获取信息的函数块中。</p><p>这时，我学会了用<strong>imaplib</strong>模块登录邮箱获取验证码。</p><p><img src="https://upload-images.jianshu.io/upload_images/5588611-0e9bae386e25d0e6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><h4 id="部署服务器"><a href="#部署服务器" class="headerlink" title="部署服务器"></a>部署服务器</h4><p>解决了验证码登录的问题，程序又一次跑了起来，此时就需要部署到服务器上了。</p><p>selenium的浏览器chrome不利于在服务器上运行，于是我学会了将selenium结合无头浏览器<strong>phantomjs</strong>使用。</p><p>服务器是新开的，环境还需要配置，于是我又学会了<strong>配置服务器的基本操作</strong>。</p><p><img src="https://upload-images.jianshu.io/upload_images/5588611-31bffe8d195069d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><h4 id="功能分离"><a href="#功能分离" class="headerlink" title="功能分离"></a>功能分离</h4><p>当单个账号单日发送的请求过多达到阀值时，网站毫不留情地封掉了账号，没有冷却时间，永久封禁。</p><p>同事为我提供了批量的账号，而我 跑崩了一个又一个。</p><p>于是我又改变了使用账号的策略，多个账号，轮流爬，每个爬几下就换。</p><p>此时不停地用selenium登录账号已经变成肥肠影响爬虫速度的一个事情了，于是我开始分割代码。</p><p>一个代码用来为账号更新cookie，一个代码直接取cookie，而可用的cookie信息，我存在了mysql中(这或许就是菜鸡吧)。。。。。</p><p><img src="https://upload-images.jianshu.io/upload_images/5588611-7b48492a2b3a6c34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><p>而这样的功能分离，它有一个高级的名字，<strong>生产者-消费者模型</strong>。</p><h4 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h4><p>此时爬虫，已经可以无障碍的运行了，挡在面前的问题是爬虫的速度，我开启了多线程，这时问题又来了，url的重复提取问题，单例运行时不需要考虑的问题，但当开启了多线程、多进程等并发操作时，url的去重就变得必要了。</p><p>再一次功能分离，将需要提取的url，放入redis库中，爬虫程序中直接使用pop函数获取url，取出即删除，不会出现重复提取的情况，<strong>redis</strong>是一个在缓存方面非常优秀的数据库。</p><p>此时的代码为了多线程的配合，将所有的与爬虫无关的，获取cookies，存取数据信息，都分离了出来，所有的通信都只存在于redis之间。</p><!-- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">A(mysql) --&gt; |提供账号|B[cookies_producer.py]</span><br><span class="line">A(mysql) --&gt; |提供源链接|D[link_producer.py]</span><br><span class="line">B --&gt; |产出cookies| E(redis)</span><br><span class="line">D --&gt; |产生链接| E(redis)</span><br><span class="line">E --&gt; |提供cookie| G[info_spider.py]</span><br><span class="line">E --&gt; |提供url| G</span><br><span class="line">G --&gt; |产生目标信息|H(mysql)</span><br></pre></td></tr></table></figure><p><code>mermaidsequenceDiagram  生产者mysql -&gt;&gt; 缓存redis: 将mysql中链接url放入redis中  生产者mysql -&gt;&gt; 缓存redis: 从mysql取出cookies放入redis  缓存redis -&gt;&gt; 消费者spider: 取出url进行爬取  缓存redis -&gt;&gt; 消费者spider: 从redis取出cookies  消费者spider -&gt;&gt; 缓存redis: 将爬去结果存入redis  缓存redis -&gt;&gt; 生产者mysql: 将爬去结果存入redis</code> –&gt;</p><p><img src="https://upload-images.jianshu.io/upload_images/5588611-4806a6a26d170bbb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><p><img src="https://upload-images.jianshu.io/upload_images/5588611-174c45f646ce555f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><h4 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h4><p>有人会想，这不就是一个项目的流程吗？</p><p>为什么这篇文章的名字是爬虫工程师劝退文呢？</p><p>因为我的账号依然被禁了。。。。。</p><p>于是我接手了同事的注册账号的项目。。。。。</p><p>砸了N多经费去买ip，买收验证码的手机号。。。。。</p><p>折腾了N久终于准备开心地把注册机代码也部署到服务器上形成程序闭环。。。。。<br>。<br>。<br>。<br>。<br>。<br>发现网站改了注册策略。。。。。。。</p><p><img src="https://upload-images.jianshu.io/upload_images/5588611-ae67c10af9ae5dcc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p><p><strong>总结语</strong>：你看，学了这么多知识，依然过不好这爬虫工程师的一生，大家还是不要私信问我需要哪些技能才能做爬虫工程师了！赶紧转行跑路吧！(敲黑板！划重点！)</p>-->]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;前言：本文无源码，来聊聊爬虫工程师终将逝去的青春&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;此刻的我正坐在工位上，看着面前的某网站爬虫代码，陷入了回忆。&lt;/p&gt;
+&lt;h4 id=&quot;缘起&quot;&gt;&lt;a href=&quot;#缘起&quot; class=&quot;headerlink&quot; title=&quot;缘
+      
+    
+    </summary>
+    
+      <category term="经验总结" scheme="http://yoursite.com/categories/%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/"/>
+    
+    
+      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>历史文章汇总</title>
+    <link href="http://yoursite.com/2018/01/03/%E5%8E%86%E5%8F%B2%E6%96%87%E7%AB%A0%E6%B1%87%E6%80%BB/"/>
+    <id>http://yoursite.com/2018/01/03/历史文章汇总/</id>
+    <published>2018-01-03T14:45:01.000Z</published>
+    <updated>2018-07-21T01:23:34.684Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="2018年以前的文章合辑-按顺序阅读即可"><a href="#2018年以前的文章合辑-按顺序阅读即可" class="headerlink" title="2018年以前的文章合辑 按顺序阅读即可"></a>2018年以前的文章合辑 按顺序阅读即可</h4><p><a href="https://www.jianshu.com/p/07cf37669702" target="_blank" rel="noopener">Python小白如何使用爬虫自动抓取《三生三世十里桃花》豆瓣电影短评</a><br>知识点：python2 正则 代理</p><p><a href="https://www.jianshu.com/p/965ae240ce65" target="_blank" rel="noopener">像开始写小说一样开始编程：用python爬虫整理简书作者文章生成pdf</a><br>知识点：jieba 词云 bs4 wkhtmltopdf</p><p><a href="https://www.jianshu.com/p/b7627e67b6b9" target="_blank" rel="noopener">国庆不去哪儿:用python爬虫爬取热门景点并生成热力图</a><br>知识点：百度API echarts xpath</p><p><a href="https://zhuanlan.zhihu.com/p/29968019" target="_blank" rel="noopener">用python对鹿晗、关晓彤微博进行情感分析</a><br>知识点：MySQL NLP matplot</p><p><a href="https://zhuanlan.zhihu.com/p/30903845" target="_blank" rel="noopener">光棍节专题：python程序员如何找女朋友</a><br>知识点：scrapy 递归</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;2018年以前的文章合辑-按顺序阅读即可&quot;&gt;&lt;a href=&quot;#2018年以前的文章合辑-按顺序阅读即可&quot; class=&quot;headerlink&quot; title=&quot;2018年以前的文章合辑 按顺序阅读即可&quot;&gt;&lt;/a&gt;2018年以前的文章合辑 按顺序阅读即可&lt;/h4&gt;&lt;
+      
+    
+    </summary>
+    
+      <category term="爬虫" scheme="http://yoursite.com/categories/%E7%88%AC%E8%99%AB/"/>
+    
+    
+      <category term="爬虫" scheme="http://yoursite.com/tags/%E7%88%AC%E8%99%AB/"/>
+    
+      <category term="数据分析" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客设置语句说明</title>
+    <link href="http://yoursite.com/2018/01/03/%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE%E8%AF%AD%E5%8F%A5%E8%AF%B4%E6%98%8E/"/>
+    <id>http://yoursite.com/2018/01/03/博客设置语句说明/</id>
+    <published>2018-01-03T01:18:01.000Z</published>
+    <updated>2018-01-03T08:32:52.671Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="创建博客文章"><a href="#创建博客文章" class="headerlink" title="创建博客文章"></a>创建博客文章</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /Users/xiaomi/Documents/Python/blog</span><br><span class="line">$ hexo new &quot;博客设置语句说明&quot;</span><br></pre></td></tr></table></figure><h5 id="启动本地服务器"><a href="#启动本地服务器" class="headerlink" title="启动本地服务器"></a>启动本地服务器</h5><p>可通过：<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 在本地预览博客效果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p><h5 id="清除缓存-可选操作"><a href="#清除缓存-可选操作" class="headerlink" title="清除缓存(可选操作)"></a>清除缓存(可选操作)</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure><h5 id="生成博客文章静态页面"><a href="#生成博客文章静态页面" class="headerlink" title="生成博客文章静态页面"></a>生成博客文章静态页面</h5><p>md文章编辑成功后<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /Users/xiaomi/Documents/Python/blog</span><br><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></p><h5 id="将文章部署至github"><a href="#将文章部署至github" class="headerlink" title="将文章部署至github"></a>将文章部署至github</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><h5 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /Users/xiaomi/Documents/Python/blog</span><br><span class="line">$ git clone https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure><p>系统会在blog文件的theme文件下创建next主题文件夹，并将主题文件克隆至本地，修改_config.yml文件</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;创建博客文章&quot;&gt;&lt;a href=&quot;#创建博客文章&quot; class=&quot;headerlink&quot; title=&quot;创建博客文章&quot;&gt;&lt;/a&gt;创建博客文章&lt;/h5&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gut
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="命令合辑" scheme="http://yoursite.com/tags/%E5%91%BD%E4%BB%A4%E5%90%88%E8%BE%91/"/>
+    
+  </entry>
+  
+</feed>
