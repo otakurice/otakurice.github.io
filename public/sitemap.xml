@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2018/10/10/leetcode%E8%90%8C%E6%96%B0%E7%BB%83%E7%BA%A7_round1_1/</loc>
+    
+    <lastmod>2018-10-10T02:40:19.302Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018/08/23/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     
     <lastmod>2018-08-23T02:03:36.545Z</lastmod>
@@ -23,14 +30,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/index.html</loc>
+    <loc>http://yoursite.com/tags/index.html</loc>
     
     <lastmod>2018-07-23T03:36:47.920Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
+    <loc>http://yoursite.com/categories/index.html</loc>
     
     <lastmod>2018-07-23T03:36:47.920Z</lastmod>
     
@@ -51,7 +58,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/01/03/%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE%E8%AF%AD%E5%8F%A5%E8%AF%B4%E6%98%8E/</loc>
+    <loc>http://yoursite.com/2018/03/28/%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%8A%9D%E9%80%80%E6%96%87/</loc>
     
     <lastmod>2018-07-23T03:36:47.918Z</lastmod>
     
@@ -65,7 +72,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/03/28/%E7%88%AC%E8%99%AB%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%8A%9D%E9%80%80%E6%96%87/</loc>
+    <loc>http://yoursite.com/2018/01/03/%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE%E8%AF%AD%E5%8F%A5%E8%AF%B4%E6%98%8E/</loc>
     
     <lastmod>2018-07-23T03:36:47.918Z</lastmod>
     
