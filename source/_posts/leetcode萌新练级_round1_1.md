@@ -58,7 +58,7 @@ class Solution:
 
 想来是因为用了2次遍历导致时间复杂度过高，看了下官方的解释，果然用的是暴力解决法\_(:зゝ∠)\_哈哈(干笑
 
-参考了网友的代码，将时间复杂度降低到了$O(n)$
+参考了[网友的代码](https://github.com/kamyu104/LeetCode/tree/master/Python)，将时间复杂度降低到了$O(n)$
 ```Python3
 class Solution:
     def twoSum(self, nums, target):

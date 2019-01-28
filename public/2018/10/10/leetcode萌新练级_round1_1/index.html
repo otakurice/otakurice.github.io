@@ -383,7 +383,7 @@
 <p>时间复杂度：$O(n^2)$</p>
 <p>空间复杂度：$O(1)$</p>
 <p>想来是因为用了2次遍历导致时间复杂度过高，看了下官方的解释，果然用的是暴力解决法_(:зゝ∠)_哈哈(干笑</p>
-<p>参考了网友的代码，将时间复杂度降低到了$O(n)$<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">class Solution:</span><br><span class="line">    def twoSum(self, nums, target):</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        :type nums: List[int]</span><br><span class="line">        :type target: int</span><br><span class="line">        :rtype: List[int]</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        one_dict = &#123;&#125;</span><br><span class="line">        for index, value in enumerate(nums):</span><br><span class="line">            if target - value in one_dict:</span><br><span class="line">                return [one_dict[target-value],index]</span><br><span class="line">            one_dict[value] = index</span><br></pre></td></tr></table></figure></p>
+<p>参考了<a href="https://github.com/kamyu104/LeetCode/tree/master/Python" target="_blank" rel="noopener">网友的代码</a>，将时间复杂度降低到了$O(n)$<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">class Solution:</span><br><span class="line">    def twoSum(self, nums, target):</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        :type nums: List[int]</span><br><span class="line">        :type target: int</span><br><span class="line">        :rtype: List[int]</span><br><span class="line">        &quot;&quot;&quot;</span><br><span class="line">        one_dict = &#123;&#125;</span><br><span class="line">        for index, value in enumerate(nums):</span><br><span class="line">            if target - value in one_dict:</span><br><span class="line">                return [one_dict[target-value],index]</span><br><span class="line">            one_dict[value] = index</span><br></pre></td></tr></table></figure></p>
 <p>时间复杂度：$O(n)$</p>
 <p>空间复杂度：$O(n)$</p>
 <p>执行用时: <strong>56 ms</strong>, 在Two Sum的Python3提交中击败了 <strong>70.35%</strong> 的用户</p>
@@ -436,6 +436,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/11/leetcode萌新练级_round1_2/" rel="prev" title="LeetCode萌新练级_round1_2 两数相加 medium">
+                LeetCode萌新练级_round1_2 两数相加 medium <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -523,7 +527,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -651,7 +655,7 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -666,7 +670,7 @@
   <div class="theme-info">
   <i class="fa fa-user-md"></i>
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共9.0k字</span>
+  <span class="post-count">博客全站共26.7k字</span>
   </div>
   <div class="powered-by">
   <span id="busuanzi_container_site_uv">
