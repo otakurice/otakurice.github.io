@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="var QZONE = window.QZONE || {}; 	function imagezoom(imgobj, box_w, box_h) { 		var src_w = imgobj.width; 		var src_h = imgobj.height; 		var r1 = src_w / src_h, r2 = box_w / box_h;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-03T01:43:13.902Z">
+<meta property="og:updated_time" content="2019-02-27T01:36:28.123Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
 <meta name="twitter:description" content="var QZONE = window.QZONE || {}; 	function imagezoom(imgobj, box_w, box_h) { 		var src_w = imgobj.width; 		var src_h = imgobj.height; 		var r1 = src_w / src_h, r2 = box_w / box_h;">
@@ -370,6 +370,13 @@
 <h3 id="根据解决方案自己进行的操作及原理"><a href="#根据解决方案自己进行的操作及原理" class="headerlink" title="根据解决方案自己进行的操作及原理"></a>根据解决方案自己进行的操作及原理</h3><p>这个同步其实比较好实现，但是因为什么分支，不同电脑，不同文件夹，又是push又是pull，导致我花了好久才看到@^@，所以总结一下。</p>
 <p>A电脑是我们平时写博客用的电脑。</p>
 <p>B电脑是我们想要在上面写博客的新电脑。</p>
+<p>首先要按照解决方案中(第二章1、2节)的方式为github项目创建分支并设置为默认分支，我的分支名字叫bachelor(和master对比，皮一下)，将分支clone到A电脑上，新建文件夹如/Users/xiaomi/new，不与已存在的本地博客/Users/xiaomi/old冲突。</p>
+<p>(第二章第3节)再将原来的本地博客文件夹old中的配置文件，包括根目录下的_config.yml和source、tags、themes拷贝到new的根目录下。要将theme目录下的.git文件(如果有)删掉，.git隐藏文件。</p>
+<p>(第二章第4节)将new文件夹的更新提交到github。</p>
+<p>(第三章)切换到新电脑B，将bachelor分支clone到本地/Users/xiaomi_office/new。在B电脑上安装hexo<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo --save</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+<p>安装好后cd 到new文件夹中，执行npm install，此时会在new文件夹中生成一个node_modules文件夹，还有package_lock.json文件。将这俩个文件添加到.gitignore中，也就是默认不提交到github上。</p>
+<p>(第四章)此时在终端使用hexo的操作命令，就可以在本地预览博客和提交博客了。使用hexo generate的时候会在new文件夹中生成新的html文件，使用hexo deploy时，会默认将html文件提交到github的master分支中，所以我们还需要手动push整个项目new文件夹的更新到bachlor分支去。</p>
+<p>所以每次对博客进行更新之后一定要push代码到github，下次换电脑就可以直接pull下来获取更新了。</p>
 <hr>
 <h3 id="每次更新需要的操作"><a href="#每次更新需要的操作" class="headerlink" title="每次更新需要的操作"></a>每次更新需要的操作</h3><h5 id="同步github分支更新"><a href="#同步github分支更新" class="headerlink" title="同步github分支更新"></a>同步github分支更新</h5><p>首先通过fork将github上副分支的更新pull下来，保证与github是同一版</p>
 <h5 id="向github提交新博客"><a href="#向github提交新博客" class="headerlink" title="向github提交新博客"></a>向github提交新博客</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 自己电脑</span><br><span class="line">cd /Users/xiaomi/Documents/Python/gitproject/otakurice.github.io</span><br><span class="line"># 业务电脑</span><br><span class="line">cd /Users/xiaomi/Documents/xiaomi/github_blog</span><br></pre></td></tr></table></figure>
@@ -440,6 +447,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/23/markdown学习笔记/" rel="prev" title="markdown学习笔记">
+                markdown学习笔记 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -527,7 +538,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -538,7 +549,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -549,7 +560,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -655,7 +666,7 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -670,7 +681,7 @@
   <div class="theme-info">
   <i class="fa fa-user-md"></i>
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共7.1k字</span>
+  <span class="post-count">博客全站共26.7k字</span>
   </div>
   <div class="powered-by">
   <span id="busuanzi_container_site_uv">
