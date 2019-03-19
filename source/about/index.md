@@ -14,4 +14,3 @@ date: 2018-01-02 23:59:00
 知乎：https://www.zhihu.com/people/otakurice
 gayhub：https://github.com/otakurice
 微信公众号：大吉大利小米酱
-python交流群：613176398
